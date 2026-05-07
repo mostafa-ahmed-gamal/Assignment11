@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Market</title>
+</head>
+<body>
+<link rel="stylesheet" href="index.css">
+
+    <video autoplay muted loop >
+        <source src="background/hederBGV.mp4" type="video/mp4">
+    </video>
+    <div id="log-in">
+        <h2>Smart Login System</h2>
+        <form novalidate>
+            <input type="email" name="Email" placeholder="Enter your email" required>
+            <input type="password" name="Password" placeholder="Enter your password" minlength="8" required >
+            <button>Log in</button>
+            <p>you have an account? <a href="javascript:void(0)" onclick="toggleForm()">SignUp</a></p>
+        </form>
+    </div>
+
+    <div id="sign-up" style="display: none;">
+        <h2>Smart Login System</h2>
+        <form>
+            <input type="text" name="UserName" placeholder="Enter your Name" required>
+            <input type="email" name="Email" placeholder="Enter your email" required>
+            <input type="password" name="Password" placeholder="Enter your password" minlength="8" required>
+            <button>Log in</button>
+            <p>you have an account? <a href="javascript:void(0)" onclick="toggleForm()">Login</a></p>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
